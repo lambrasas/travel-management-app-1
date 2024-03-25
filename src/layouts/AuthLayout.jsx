@@ -3,10 +3,10 @@ import styles from "./AuthLayout.module.scss";
 
 const AuthLayout = ({ children }) => {
   return (
-    <div className={styles.background}>
-      {children}
-
+    <div className={styles.layout}>
+      <div className={styles.background} />
       <div className={styles.shadowLayer} />
+      <div className={styles.content}>{children}</div>
     </div>
   );
 };
