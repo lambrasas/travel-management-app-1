@@ -1,10 +1,16 @@
-import NavigationBar from "../../components/NavigationBar/NavigationBar";
+import OrderRow from "./OrderRow";
+import { fakeOrders } from "./consts";
+import styles from "./Orders.module.scss";
 
 const Orders = () => {
   return (
     <>
-      <NavigationBar />
-      <h1>Orders</h1>
+      <h1 className={styles.title}>Orders</h1>
+      {fakeOrders.map((order) => (
+        <div key={order.id} className={styles.item}>
+          <OrderRow order={order} />
+        </div>
+      ))}
     </>
   );
 };

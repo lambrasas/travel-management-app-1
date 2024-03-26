@@ -1,14 +1,11 @@
 .formContainer {
   max-width: 600px;
   margin: 0 auto;
-  padding: 2rem;
+  padding: 2rem 2rem 2.5rem 2rem;
   border-radius: 5px;
   box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
     rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
   background-color: #ffffff;
-  @media only screen and (max-width: 600px) {
-    margin: 8rem 1rem;
-  }
 }
 
 .formTitle {

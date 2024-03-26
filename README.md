@@ -18,3 +18,4 @@ Application for travel management
 - User can change his password
 - https://www.npmjs.com/package/classnames
 - https://getcssscan.com/css-box-shadow-examples
+- https://www.npmjs.com/package/react-icons
