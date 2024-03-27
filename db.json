@@ -1,0 +1,88 @@
+{
+  "orders": [
+    {
+      "id": "1",
+      "hotelId": 1,
+      "price": 500,
+      "persons": [
+        "Rokas",
+        "Tadas",
+        "Marija"
+      ],
+      "startDate": "2024-03-26T17:15:23Z",
+      "endDate": "2024-03-30T17:15:23Z"
+    },
+    {
+      "id": "2",
+      "hotelId": 2,
+      "price": 347,
+      "persons": [
+        "Rokas",
+        "Tadas",
+        "Marija",
+        "Tomas"
+      ],
+      "startDate": "2024-04-26T17:15:23Z",
+      "endDate": "2024-05-30T17:15:23Z"
+    },
+    {
+      "id": "3",
+      "hotelId": 3,
+      "price": 8000,
+      "persons": [
+        "Rokas",
+        "Tadas"
+      ],
+      "startDate": "2024-07-12T17:15:23Z",
+      "endDate": "2024-08-01T17:15:23Z"
+    },
+    {
+      "id": "6447",
+      "hotelId": 3,
+      "price": 5000,
+      "persons": [
+        "Rokas",
+        "Tomas"
+      ],
+      "startDate": "2024-03-28T19:46",
+      "endDate": "2024-03-31T19:46"
+    },
+    {
+      "id": "ec12",
+      "hotelId": 2,
+      "price": 777,
+      "persons": [
+        "Tadukas"
+      ],
+      "startDate": "2024-03-28T19:48",
+      "endDate": "2024-03-31T19:48"
+    },
+    {
+      "id": "18d3",
+      "hotelId": 1,
+      "price": 123,
+      "persons": [
+        "test"
+      ],
+      "startDate": "",
+      "endDate": ""
+    }
+  ],
+  "hotels": [
+    {
+      "id": 1,
+      "title": "Amsterdam Old Plaza",
+      "imageUrl": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/227221552.jpg?k=7fa35af9d6a15d6c947dc8c196831a8d336daac0e42dd19ce59a6aab9486314e&o=&hp=1"
+    },
+    {
+      "id": 2,
+      "title": "Hilton Garden Inn",
+      "imageUrl": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/484101109.jpg?k=6dd80fff0078bd15430c0726a5f3b8d14108097bcde2d2335917f4ce0879be0e&o=&hp=1"
+    },
+    {
+      "id": 3,
+      "title": "Trump tower",
+      "imageUrl": "https://s.abcnews.com/images/US/trump-tower-ap-file-ml-240129_1706547153628_hpMain_16x9_1600.jpg"
+    }
+  ]
+}

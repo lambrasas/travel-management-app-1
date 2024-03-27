@@ -42,7 +42,7 @@ const OrderRow = ({ order }) => {
 
 OrderRow.propTypes = {
   order: PropTypes.shape({
-    id: PropTypes.number.isRequired,
+    id: PropTypes.string,
     hotel: PropTypes.shape({
       id: PropTypes.number.isRequired,
       title: PropTypes.string.isRequired,
@@ -51,7 +51,7 @@ OrderRow.propTypes = {
     price: PropTypes.number.isRequired,
     persons: PropTypes.array.isRequired,
     startDate: PropTypes.string.isRequired,
-    endDate: PropTypes.string.isRequireds,
+    endDate: PropTypes.string.isRequired,
   }),
 };
 

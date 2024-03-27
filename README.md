@@ -19,3 +19,5 @@ Application for travel management
 - https://www.npmjs.com/package/classnames
 - https://getcssscan.com/css-box-shadow-examples
 - https://www.npmjs.com/package/react-icons
+- https://www.npmjs.com/package/json-server
+- vienam terminale "npm run dev" ir kitame "npm run server"
