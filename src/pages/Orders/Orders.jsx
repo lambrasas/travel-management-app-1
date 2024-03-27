@@ -31,7 +31,7 @@ const Orders = () => {
   }, []);
 
   const ordersWithHotelInfo = orders.map((order) => {
-    const hotel = hotels.find((hotel) => hotel.id === order.hotelId);
+    const hotel = hotels.find((hotel) => hotel.id == order.hotelId);
     return { ...order, hotel };
   });
 

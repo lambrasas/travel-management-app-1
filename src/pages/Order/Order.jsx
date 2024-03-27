@@ -38,7 +38,7 @@ const Order = () => {
     );
   }
 
-  const hotel = hotels.find((hotel) => hotel.id === order.hotelId);
+  const hotel = hotels.find((hotel) => hotel.id == order.hotelId);
   const orderWithHotelInfo = { ...order, hotel };
 
   return (
