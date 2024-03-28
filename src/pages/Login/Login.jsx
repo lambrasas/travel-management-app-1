@@ -22,6 +22,7 @@ const Login = () => {
         <div className={styles.formTitle}>Login</div>
         <form onSubmit={handleSubmit} className={styles.form}>
           <Input
+            id="email"
             type="email"
             placeholder="Email"
             value={email}
@@ -30,6 +31,7 @@ const Login = () => {
             required
           />
           <Input
+            id="password"
             type="password"
             placeholder="Password"
             value={password}

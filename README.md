@@ -21,3 +21,12 @@ Application for travel management
 - https://www.npmjs.com/package/react-icons
 - https://www.npmjs.com/package/json-server
 - vienam terminale "npm run dev" ir kitame "npm run server"
+- Hotels atvaizdavimas
+- Hotel pridejimas
+- Logout button veikimas
+- Pridėti Registracijos linką login formoje
+- Delete order funkcionalumas
+- Delete hotel funkcionalumas
+- Sukurti registracijos formą, po sėkmingos registracijos, permetam į Login formą
+- Optional: Edit Order funkcionalumas
+- Optional: User funkcionalumas (sudėti viską JSON server)
