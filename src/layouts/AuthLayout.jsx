@@ -11,6 +11,14 @@ const AuthLayout = ({ children }) => {
   );
 };
 
+{
+  /* <div className={styles.layout}>
+<div className={styles.background} />
+<div className={styles.shadowLayer} />
+<div className={styles.content}>{<LoginPage/>}</div>
+</div> */
+}
+
 AuthLayout.propTypes = {
   children: PropTypes.node.isRequired,
 };

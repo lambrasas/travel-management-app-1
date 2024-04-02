@@ -2,6 +2,7 @@ import PropTypes from "prop-types";
 import classNames from "classnames";
 import styles from "./Select.module.scss";
 
+// options = [{value: 1, label: "First item"}, {value: 2, label: "Second item"}]
 const Select = ({ options, label, className, ...props }) => {
   return (
     <>
