@@ -44,7 +44,7 @@ OrderRow.propTypes = {
   order: PropTypes.shape({
     id: PropTypes.string,
     hotel: PropTypes.shape({
-      id: PropTypes.number.isRequired,
+      id: PropTypes.string.isRequired,
       title: PropTypes.string.isRequired,
       imageUrl: PropTypes.string.isRequired,
     }),
