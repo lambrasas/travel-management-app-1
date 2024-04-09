@@ -4,11 +4,13 @@ import Input from "../../components/Input/Input";
 import Button from "../../components/Button/Button";
 import { ROUTES } from "../../routes/consts";
 import styles from "./Login.module.scss";
-
+import { useContext } from "react";
+import { ThemeContext } from "../../contexts/ThemeContext";
 const Login = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const navigate = useNavigate();
+  const { theme } = useContext(ThemeContext);
 
   const handleSubmit = (event) => {
     event.preventDefault();
@@ -39,7 +41,12 @@ const Login = () => {
             className={styles.fullWidth}
             required
           />
-          <Button type="submit" className={styles.loginButton}>
+          <Button
+            type="submit"
+            theme={theme}
+            className={styles.loginButton}
+            onClick={handleSubmit}
+          >
             Log In
           </Button>
         </form>

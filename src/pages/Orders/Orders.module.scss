@@ -5,6 +5,7 @@
   justify-content: space-between;
   align-items: center;
   margin-bottom: 1rem;
+  gap: 20px;
 }
 
 .item {
@@ -28,7 +29,10 @@
 .id {
   font-size: 1.2rem;
   font-weight: 500;
+  width: 50px;
+  max-width: 50px;
   color: $secondary-text-color;
+  text-align: center;
 }
 
 .hotelImage {
@@ -59,4 +63,13 @@
 
 .price {
   color: green;
+}
+.light {
+  background-color: white;
+  color: black;
+}
+
+.dark {
+  background-color: black;
+  color: white;
 }

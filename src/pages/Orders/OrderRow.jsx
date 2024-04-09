@@ -5,12 +5,20 @@ import { FaDollarSign } from "react-icons/fa";
 import { IoPerson } from "react-icons/io5";
 import { ROUTES } from "../../routes/consts";
 import styles from "./Orders.module.scss";
+import { ThemeContext } from "../../contexts/ThemeContext";
+import { useContext } from "react";
 
 const OrderRow = ({ order }) => {
+  const { theme } = useContext(ThemeContext);
   const orderPath = generatePath(ROUTES.ORDER, { id: order.id });
 
   return (
-    <div className={styles.orderRow}>
+    <div
+      className={classNames(
+        styles.orderRow,
+        theme === "light" ? styles.dark : styles.light
+      )}
+    >
       <div className={styles.leftSide}>
         <p className={styles.id}>{order.id}</p>
         <div className={styles.hotelImage}>

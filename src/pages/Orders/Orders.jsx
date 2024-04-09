@@ -6,12 +6,14 @@ import { ROUTES } from "../../routes/consts";
 import { fetchOrders } from "../../api/orders";
 import { fetchHotels } from "../../api/hotels";
 import styles from "./Orders.module.scss";
-
+import { useContext } from "react";
+import { ThemeContext } from "../../contexts/ThemeContext";
+import classNames from "classnames";
 const Orders = () => {
+  const { theme } = useContext(ThemeContext);
   const [orders, setOrders] = useState([]);
   const [hotels, setHotels] = useState([]);
   const navigete = useNavigate();
-
   useEffect(() => {
     const fetchOrdersAndHotels = async () => {
       try {
@@ -37,15 +39,24 @@ const Orders = () => {
 
   return (
     <>
-      <div className={styles.titleBar}>
+      <div
+        className={classNames(
+          styles.titleBar,
+          theme === "light" ? styles.dark : styles.light
+        )}
+      >
         <h1>Orders</h1>
-        <Button onClick={() => navigete(ROUTES.NEW_ORDER)}>Add order</Button>
+        <Button theme={theme} onClick={() => navigete(ROUTES.NEW_ORDER)}>
+          Add order
+        </Button>
       </div>
-      {ordersWithHotelInfo.map((order) => (
-        <div key={order.id} className={styles.item}>
-          <OrderRow order={order} />
-        </div>
-      ))}
+      <div>
+        {ordersWithHotelInfo.map((order) => (
+          <div key={order.id} className={styles.item}>
+            <OrderRow order={order} />
+          </div>
+        ))}
+      </div>
     </>
   );
 };
