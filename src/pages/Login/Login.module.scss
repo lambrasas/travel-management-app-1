@@ -24,3 +24,14 @@
   display: block;
   width: 100%;
 }
+.light {
+  background-color: white;
+  color: black;
+  transition: 0.3s;
+}
+
+.dark {
+  background-color: black;
+  color: white;
+  transition: 0.3s;
+}

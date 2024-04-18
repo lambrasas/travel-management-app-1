@@ -6,6 +6,7 @@ import { ROUTES } from "../../routes/consts";
 import styles from "./Login.module.scss";
 import { useContext } from "react";
 import { ThemeContext } from "../../contexts/ThemeContext";
+import classNames from "classnames";
 const Login = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
@@ -44,7 +45,7 @@ const Login = () => {
           <Button
             type="submit"
             theme={theme}
-            className={styles.loginButton}
+            className={classNames(styles.loginButton, styles.dark)}
             onClick={handleSubmit}
           >
             Log In
